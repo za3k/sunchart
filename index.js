@@ -221,7 +221,7 @@ function drawGraph(today) {
     drawGraphBase(g)
 }
 
-function main() { drawGraph(new Date()) }
+function main() { drawGraph(new Date()); setTimeout(main, 3600000) }
 
 function demo() {
     var today = new Date()
