@@ -14,10 +14,10 @@ function daylightHours(date, place) {
 
 function drawGraphInit(canvas) {
     const ctx = canvas.getContext("2d")
-    canvas.width  = width  +2*b
+    canvas.width  = width  +8*b
     canvas.height = height +2*b
 
-    ctx.translate(b, b)
+    ctx.translate(4*b, b)
     return ctx
 }
 
@@ -215,6 +215,8 @@ function drawGraph(today) {
     }
 
     drawGraphLine(g, today, "you are here", {strokeStyle: "red", d: 50})
+    drawGraphLine(g, 0, "perpetual night", {strokeStyle: "grey", d: 50})
+    drawGraphLine(g, Math.PI, "perpetual day", {strokeStyle: "grey"})
     drawGraphSweep(g, today, increasingDaylight) // Draw motion sweep to indicate direction
     drawGraphBase(g)
 }
