@@ -1,0 +1,19 @@
+<html>
+<head>
+    <script src="suncalc.js"></script>
+    <script src="d3.v7.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <title>When is it summer</title>
+</head>
+<body>
+    <h2>How long until the sun comes back?</h2>
+    <h4>a sunlight calendar</h4>
+    <input type="button" value="Animate" id="demo" onclick="demo(); document.getElementById('demo').remove()" style="position: absolute; right: 20px; top: 20px;"></input>
+    <canvas id="graph">
+    </canvas>
+    <div class="footer">
+        <b>Sunchart</b> is a calendar that shows you when the sun will come back (or go away). It was made by <b>za3k</b> as part of <a href="https://za3k.com/hackaday">hack-a-day 2024</a>. Source code is <a href="">on github</a>.
+    </div>
+</body>

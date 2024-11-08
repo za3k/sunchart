@@ -1,0 +1,29 @@
+canvas {
+    border: 1px dashed black;
+    margin: auto;
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+h2, h4 {
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    padding-top: 2em;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    background: lightgrey;
+}
