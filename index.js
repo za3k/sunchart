@@ -210,8 +210,8 @@ function drawGraph(today) {
     drawGraphLine(g, summerSolstice, "summer solstice", {dashed: true, strokeStyle: "grey", d: 50})
     drawGraphLine(g, winterSolstice, "winter solstice", {dashed: true, strokeStyle: "grey", d: 50})
 
-    for (var hour = 0; hour <= 12; hour++) {
-        drawGraphLine(g, hour/12*Math.PI, undefined, {dashed: true, strokeStyle: "lightgrey"})
+    for (var hour = 0; hour <= 24; hour++) {
+        drawGraphLine(g, hour/24*Math.PI, undefined, {dashed: true, strokeStyle: "lightgrey"})
     }
 
     drawGraphLine(g, today, "you are here", {strokeStyle: "red", d: 50})
